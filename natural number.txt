@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class PrintNaturalNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a natural number (n): ");
+        int n = scanner.nextInt();
+        
+        if (n < 1) {
+            System.out.println("Please enter a natural number greater than 0.");
+        } else {
+            System.out.println("Natural numbers from 1 to " + n + ":");
+            for (int i = 1; i <= n; i++) {
+                System.out.print(i + " ");
+            }
+            System.out.println(); // for a new line after printing the numbers
+        }
+        
+        scanner.close();
+    }
+}
+
