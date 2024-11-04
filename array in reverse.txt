@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class ReverseArray {
+    public static void main(String[] args) {
+        // Example array
+        int[] array = {1, 2, 4,5,7,9,11,13,15,19,20,22,24,28,31,36,39,45,47,50,54,58,59,60,64,67,68,71,74,77,79,84,86,88,91,93,97,99,100};
+
+        // Print the original array
+        System.out.println("Original Array:");
+        printArray(array);
+
+        // Print the array in reverse order
+        System.out.println("Reversed Array:");
+        printArrayInReverse(array);
+    }
+
+    // Method to print the array
+    public static void printArray(int[] array) {
+        for (int value : array) {
+            System.out.print(value + " ");
+        }
+        System.out.println();
+    }
+
+    // Method to print the array in reverse order
+    public static void printArrayInReverse(int[] array) {
+        for (int i = array.length - 1; i >= 0; i--) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+}
